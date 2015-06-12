@@ -1,7 +1,6 @@
 body{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
 	font-family: $open-sans;
 
 	text-rendering: optimizeLegibility;
@@ -16,6 +15,7 @@ body{
 
 * a{
 	text-decoration: none;
+	color: $base_text;
 }
 img {
 	display: block;
@@ -61,6 +61,11 @@ input {
 .float--left { float: left; }
 .float--none { float: none; }
 
+// Float element important
+.float--right--imp{ float: right !important; }
+.float--left--imp { float: left !important; }
+.float--none--imp { float: none !important; }
+
 // Font align
 .font__align--center { text-align: center}
 .font__align--left { text-align: left}
@@ -72,6 +77,21 @@ input {
 .font__weight--400 { font-weight: 400 }
 .font__weight--700 { font-weight: 700 }
 .font__weight--900 { font-weight: 900 }
+
+// Align
+.text__align--left {
+	text-align: left;
+}
+.text__align--right {
+	text-align: right;
+}
+.text__align--center {
+	text-align: center;
+}
+.text__align--justify {
+	text-align: justify;
+}
+
 
 // Margin 
 .margin--zero { margin: 0;}
@@ -123,37 +143,12 @@ input {
 }
 
 // font size
-.font__size--7px {
-	font-size: 7px;
-}
-.font__size--12px {
-	font-size: 12px;
-}
-
-.font__size--14px {
-	font-size: 14px;
-}
-.font__size--16px {
-	font-size: 16px;
-}
-.font__size--18px {
-	font-size: 18px;
-}
-
-.font__size--20px {
-	font-size: 20px;
-}
-.font__size--24px {
+.font__size--head-mobile{
 	font-size: 24px;
+	line-height: 40px;
 }
-.font__size--30px {
-	font-size: 30px;
-}
-.font__size--37px {
-	font-size: 37px;
-}
-.font__size--100px {
-	font-size: 100px;
+.font__size--250px{
+	font-size: 250px;
 }
 // line height
 .line__height--105em{
@@ -164,24 +159,31 @@ input {
 }
 
 // font color 
+.font__color--white {
+	color: $white;
+}
+.font__color--red {
+	color: $base_red;
+}
+.font__color--dark-blue {
+	color: $base_text;
+}
+.font__color--light-blue {
+	color: $secondary_text;
+}
 
 
 //backgound color
+.bg__color--red {
+	background-color: $base_red;
+}
+.bg__color--drak-blue {
+	background-color: $base_text ;
+}
+.bg__color--light-blue {
+	background-color: $light_blue ;
+}
 
-
-// Align
-.text__align--left {
-	text-align: left;
-}
-.text__align--right {
-	text-align: right;
-}
-.text__align--center {
-	text-align: center;
-}
-.text__align--justify {
-	text-align: justify;
-}
 
 
 // block element
@@ -224,4 +226,31 @@ input {
 	width: 50%;
 }
 
+.center_box{
+	width: 90%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 85px;
+}
+
+
+@include responsive(desktop) {
+	.display__deskptop--none {
+		display: none !important;
+	}
+	.center_box {
+		width: 50%;
+	}
+}
+
+
+@include responsive(mobile) {
+	.display__mobile--none {
+		display: none !important;
+	}
+}
 

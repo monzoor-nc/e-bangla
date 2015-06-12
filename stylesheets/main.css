@@ -197,29 +197,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  * Apply a clearfix to an element.
  */
-@media only screen and (max-width: 1099px) {
-  /* line 44, ../sass/common/_2mixin.scss */
-  body {
-    background-color: red !important;
-  }
-}
-@media only screen and (min-width: 586px) and (max-width: 767px) {
-  /* line 49, ../sass/common/_2mixin.scss */
-  body {
-    background-color: yellow !important;
-  }
-}
-@media only screen and (max-width: 480px) {
-  /* line 54, ../sass/common/_2mixin.scss */
-  body {
-    background-color: green !important;
-  }
-}
-/* line 1, ../sass/common/_3common.scss */
+/* line 1, ../sass/common/_4common.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
@@ -230,34 +211,35 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* line 17, ../sass/common/_3common.scss */
+/* line 16, ../sass/common/_4common.scss */
 * a {
   text-decoration: none;
+  color: #34495e;
 }
 
-/* line 20, ../sass/common/_3common.scss */
+/* line 20, ../sass/common/_4common.scss */
 img {
   display: block;
 }
 
-/* line 24, ../sass/common/_3common.scss */
+/* line 24, ../sass/common/_4common.scss */
 :focus {
   outline: none;
 }
 
-/* line 25, ../sass/common/_3common.scss */
+/* line 25, ../sass/common/_4common.scss */
 button::-moz-focus-inner {
   border: 0;
 }
 
-/* line 28, ../sass/common/_3common.scss */
+/* line 28, ../sass/common/_4common.scss */
 input {
   outline-color: transparent;
   box-shadow: 0px 0px 0px #888888;
 }
 
-/* line 34, ../sass/common/_3common.scss */
-nav {
+/* line 34, ../sass/common/_4common.scss */
+#about_us i, #about_us .content, #service .content, #contact .content {
   position: absolute;
   left: 0;
   right: 0;
@@ -266,514 +248,548 @@ nav {
   margin: auto;
 }
 
-/* line 42, ../sass/common/_3common.scss */
+/* line 42, ../sass/common/_4common.scss */
 .content__info__wrapper--full:after, .content__info__wrapper--full--no-padding:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 48, ../sass/common/_3common.scss */
+/* line 48, ../sass/common/_4common.scss */
 .clear {
   clear: both;
 }
 
-/* line 51, ../sass/common/_3common.scss */
+/* line 51, ../sass/common/_4common.scss */
 .clear--none {
   clear: none !important;
 }
 
-/* line 56, ../sass/common/_3common.scss */
+/* line 56, ../sass/common/_4common.scss */
 .underline {
   text-decoration: underline;
 }
 
-/* line 57, ../sass/common/_3common.scss */
+/* line 57, ../sass/common/_4common.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 60, ../sass/common/_3common.scss */
+/* line 60, ../sass/common/_4common.scss */
 .float--right {
   float: right;
 }
 
-/* line 61, ../sass/common/_3common.scss */
+/* line 61, ../sass/common/_4common.scss */
 .float--left {
   float: left;
 }
 
-/* line 62, ../sass/common/_3common.scss */
+/* line 62, ../sass/common/_4common.scss */
 .float--none {
   float: none;
 }
 
-/* line 65, ../sass/common/_3common.scss */
+/* line 65, ../sass/common/_4common.scss */
+.float--right--imp {
+  float: right !important;
+}
+
+/* line 66, ../sass/common/_4common.scss */
+.float--left--imp {
+  float: left !important;
+}
+
+/* line 67, ../sass/common/_4common.scss */
+.float--none--imp {
+  float: none !important;
+}
+
+/* line 70, ../sass/common/_4common.scss */
 .font__align--center {
   text-align: center;
 }
 
-/* line 66, ../sass/common/_3common.scss */
+/* line 71, ../sass/common/_4common.scss */
 .font__align--left {
   text-align: left;
 }
 
-/* line 67, ../sass/common/_3common.scss */
+/* line 72, ../sass/common/_4common.scss */
 .font__align--right {
   text-align: right;
 }
 
-/* line 70, ../sass/common/_3common.scss */
+/* line 75, ../sass/common/_4common.scss */
 .font__weight--100 {
   font-weight: 100;
 }
 
-/* line 71, ../sass/common/_3common.scss */
+/* line 76, ../sass/common/_4common.scss */
 .font__weight--300 {
   font-weight: 300;
 }
 
-/* line 72, ../sass/common/_3common.scss */
+/* line 77, ../sass/common/_4common.scss */
 .font__weight--400 {
   font-weight: 400;
 }
 
-/* line 73, ../sass/common/_3common.scss */
+/* line 78, ../sass/common/_4common.scss */
 .font__weight--700 {
   font-weight: 700;
 }
 
-/* line 74, ../sass/common/_3common.scss */
+/* line 79, ../sass/common/_4common.scss */
 .font__weight--900 {
   font-weight: 900;
 }
 
-/* line 77, ../sass/common/_3common.scss */
+/* line 82, ../sass/common/_4common.scss */
+.text__align--left {
+  text-align: left;
+}
+
+/* line 85, ../sass/common/_4common.scss */
+.text__align--right {
+  text-align: right;
+}
+
+/* line 88, ../sass/common/_4common.scss */
+.text__align--center {
+  text-align: center;
+}
+
+/* line 91, ../sass/common/_4common.scss */
+.text__align--justify {
+  text-align: justify;
+}
+
+/* line 97, ../sass/common/_4common.scss */
 .margin--zero {
   margin: 0;
 }
 
-/* line 78, ../sass/common/_3common.scss */
+/* line 98, ../sass/common/_4common.scss */
 .margin__left--3 {
   margin-left: 3px;
 }
 
-/* line 79, ../sass/common/_3common.scss */
+/* line 99, ../sass/common/_4common.scss */
 .margin__top--4 {
   margin-top: 4px;
 }
 
-/* line 80, ../sass/common/_3common.scss */
+/* line 100, ../sass/common/_4common.scss */
 .margin__auto--top0 {
   margin: 0 auto;
 }
 
-/* line 81, ../sass/common/_3common.scss */
+/* line 101, ../sass/common/_4common.scss */
 .margin__top--30 {
   margin-top: 30px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--0 {
   margin-top: 0px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--6 {
   margin-top: 6px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--12 {
   margin-top: 12px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--18 {
   margin-top: 18px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--24 {
   margin-top: 24px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--30 {
   margin-top: 30px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--36 {
   margin-top: 36px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--42 {
   margin-top: 42px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--48 {
   margin-top: 48px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--54 {
   margin-top: 54px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__top--60 {
   margin-top: 60px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--0 {
   margin-bottom: 0px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--6 {
   margin-bottom: 6px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--12 {
   margin-bottom: 12px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--18 {
   margin-bottom: 18px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--24 {
   margin-bottom: 24px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--30 {
   margin-bottom: 30px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--36 {
   margin-bottom: 36px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--42 {
   margin-bottom: 42px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--48 {
   margin-bottom: 48px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--54 {
   margin-bottom: 54px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__bottom--60 {
   margin-bottom: 60px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--0 {
   margin-left: 0px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--6 {
   margin-left: 6px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--12 {
   margin-left: 12px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--18 {
   margin-left: 18px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--24 {
   margin-left: 24px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--30 {
   margin-left: 30px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--36 {
   margin-left: 36px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--42 {
   margin-left: 42px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--48 {
   margin-left: 48px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--54 {
   margin-left: 54px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__left--60 {
   margin-left: 60px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--0 {
   margin-right: 0px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--6 {
   margin-right: 6px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--12 {
   margin-right: 12px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--18 {
   margin-right: 18px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--24 {
   margin-right: 24px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--30 {
   margin-right: 30px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--36 {
   margin-right: 36px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--42 {
   margin-right: 42px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--48 {
   margin-right: 48px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--54 {
   margin-right: 54px;
 }
 
-/* line 85, ../sass/common/_3common.scss */
+/* line 105, ../sass/common/_4common.scss */
 .margin__right--60 {
   margin-right: 60px;
 }
 
-/* line 95, ../sass/common/_3common.scss */
+/* line 115, ../sass/common/_4common.scss */
 .padding__right--30 {
   padding-right: 30px;
 }
 
-/* line 98, ../sass/common/_3common.scss */
+/* line 118, ../sass/common/_4common.scss */
 .padding__top--60 {
   padding-top: 60px;
 }
 
-/* line 101, ../sass/common/_3common.scss */
+/* line 121, ../sass/common/_4common.scss */
 .padding__top--30 {
   padding-top: 30px;
 }
 
-/* line 104, ../sass/common/_3common.scss */
+/* line 124, ../sass/common/_4common.scss */
 .padding__bottom--60 {
   padding-bottom: 60px;
 }
 
-/* line 107, ../sass/common/_3common.scss */
+/* line 127, ../sass/common/_4common.scss */
 .padding__bottom--30 {
   padding-bottom: 30px;
 }
 
-/* line 110, ../sass/common/_3common.scss */
+/* line 130, ../sass/common/_4common.scss */
 .padding__bottom--12 {
   padding-bottom: 12px;
 }
 
-/* line 113, ../sass/common/_3common.scss */
+/* line 133, ../sass/common/_4common.scss */
 .pdding__all--zero {
   padding: 0;
 }
 
-/* line 116, ../sass/common/_3common.scss */
+/* line 136, ../sass/common/_4common.scss */
 .padding__point25 {
   padding: 1% 3%;
   width: 94%;
 }
 
-/* line 121, ../sass/common/_3common.scss */
+/* line 141, ../sass/common/_4common.scss */
 .courser--no {
   cursor: text;
 }
 
-/* line 126, ../sass/common/_3common.scss */
-.font__size--7px {
-  font-size: 7px;
-}
-
-/* line 129, ../sass/common/_3common.scss */
-.font__size--12px {
-  font-size: 12px;
-}
-
-/* line 133, ../sass/common/_3common.scss */
-.font__size--14px {
-  font-size: 14px;
-}
-
-/* line 136, ../sass/common/_3common.scss */
-.font__size--16px {
-  font-size: 16px;
-}
-
-/* line 139, ../sass/common/_3common.scss */
-.font__size--18px {
-  font-size: 18px;
-}
-
-/* line 143, ../sass/common/_3common.scss */
-.font__size--20px {
-  font-size: 20px;
-}
-
-/* line 146, ../sass/common/_3common.scss */
-.font__size--24px {
+/* line 146, ../sass/common/_4common.scss */
+.font__size--head-mobile {
   font-size: 24px;
+  line-height: 40px;
 }
 
-/* line 149, ../sass/common/_3common.scss */
-.font__size--30px {
-  font-size: 30px;
+/* line 150, ../sass/common/_4common.scss */
+.font__size--250px {
+  font-size: 250px;
 }
 
-/* line 152, ../sass/common/_3common.scss */
-.font__size--37px {
-  font-size: 37px;
-}
-
-/* line 155, ../sass/common/_3common.scss */
-.font__size--100px {
-  font-size: 100px;
-}
-
-/* line 159, ../sass/common/_3common.scss */
+/* line 154, ../sass/common/_4common.scss */
 .line__height--105em {
   line-height: 1.5em;
 }
 
-/* line 162, ../sass/common/_3common.scss */
+/* line 157, ../sass/common/_4common.scss */
 .line__height--1em {
   line-height: 1em;
 }
 
-/* line 173, ../sass/common/_3common.scss */
-.text__align--left {
-  text-align: left;
+/* line 162, ../sass/common/_4common.scss */
+.font__color--white {
+  color: #ffffff;
 }
 
-/* line 176, ../sass/common/_3common.scss */
-.text__align--right {
-  text-align: right;
+/* line 165, ../sass/common/_4common.scss */
+.font__color--red {
+  color: #eb5255;
 }
 
-/* line 179, ../sass/common/_3common.scss */
-.text__align--center {
-  text-align: center;
+/* line 168, ../sass/common/_4common.scss */
+.font__color--dark-blue {
+  color: #34495e;
 }
 
-/* line 182, ../sass/common/_3common.scss */
-.text__align--justify {
-  text-align: justify;
+/* line 171, ../sass/common/_4common.scss */
+.font__color--light-blue {
+  color: #91a3ad;
 }
 
-/* line 188, ../sass/common/_3common.scss */
+/* line 177, ../sass/common/_4common.scss */
+.bg__color--red {
+  background-color: #eb5255;
+}
+
+/* line 180, ../sass/common/_4common.scss */
+.bg__color--drak-blue {
+  background-color: #34495e;
+}
+
+/* line 183, ../sass/common/_4common.scss */
+.bg__color--light-blue, #service {
+  background-color: #e4ebf5;
+}
+
+/* line 190, ../sass/common/_4common.scss */
 .display--block {
   display: block;
 }
 
-/* line 191, ../sass/common/_3common.scss */
+/* line 193, ../sass/common/_4common.scss */
 .display--inblock {
   display: inline-block;
 }
 
-/* line 194, ../sass/common/_3common.scss */
+/* line 196, ../sass/common/_4common.scss */
 .display--table {
   display: table;
 }
 
-/* line 197, ../sass/common/_3common.scss */
+/* line 199, ../sass/common/_4common.scss */
 .display--table-cell {
   display: table-cell;
 }
 
-/* line 201, ../sass/common/_3common.scss */
+/* line 203, ../sass/common/_4common.scss */
 .align__vertical--middle {
   vertical-align: middle;
 }
 
-/* line 205, ../sass/common/_3common.scss */
+/* line 207, ../sass/common/_4common.scss */
 .position--relative {
   position: relative;
 }
 
-/* line 209, ../sass/common/_3common.scss */
+/* line 211, ../sass/common/_4common.scss */
 .visibility--hidden {
   visibility: hidden;
 }
 
-/* line 213, ../sass/common/_3common.scss */
+/* line 215, ../sass/common/_4common.scss */
 .border--bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* line 216, ../sass/common/_3common.scss */
+/* line 218, ../sass/common/_4common.scss */
 .border--zero {
   border: 0px solid !important;
 }
 
-/* line 220, ../sass/common/_3common.scss */
+/* line 222, ../sass/common/_4common.scss */
 .width__special--full {
   width: 100%;
 }
 
-/* line 223, ../sass/common/_3common.scss */
+/* line 225, ../sass/common/_4common.scss */
 .width__special--half {
   width: 50%;
 }
 
+/* line 229, ../sass/common/_4common.scss */
+.center_box {
+  width: 90%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 85px;
+}
+
+@media screen and (min-width: 761px) {
+  /* line 242, ../sass/common/_4common.scss */
+  .display__deskptop--none {
+    display: none !important;
+  }
+
+  /* line 245, ../sass/common/_4common.scss */
+  .center_box {
+    width: 50%;
+  }
+}
 /* line 3, ../sass/common/_base_grid.scss */
 .content__grid--940-center {
   *zoom: 1;
@@ -1026,6 +1042,421 @@ nav {
   clear: both;
 }
 
+/* line 4, ../sass/common/_button.scss */
+button {
+  width: auto;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: visible;
+  vertical-align: middle;
+}
+
+/* line 14, ../sass/common/_button.scss */
+button, .button {
+  font-size: 15px;
+  line-height: 24px;
+  padding: 6px 18px;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-transition-property: transition-property-names(background, "webkit");
+  -moz-transition-property: transition-property-names(background, "moz");
+  transition-property: transition-property-names(background, false);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background-color: #eb5255;
+  color: white;
+}
+/* line 35, ../sass/common/_button.scss */
+button.width--full, .button.width--full {
+  width: 100%;
+}
+/* line 36, ../sass/common/_button.scss */
+button.width--full--no-padding, .button.width--full--no-padding {
+  width: 100%;
+  padding: 6px 0;
+}
+/* line 37, ../sass/common/_button.scss */
+button.width--half, .button.width--half {
+  width: 50%;
+}
+
+/* line 1, ../sass/common/_form-element.scss */
+form {
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin: 0;
+}
+/* line 265, ../sass/vendor/jeet/_grid.scss */
+form:first-child {
+  margin-left: auto;
+}
+/* line 269, ../sass/vendor/jeet/_grid.scss */
+form:last-child {
+  margin-right: auto;
+}
+/* line 5, ../sass/common/_form-element.scss */
+form > a {
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* line 10, ../sass/common/_form-element.scss */
+input {
+  border: 0;
+  box-shadow: 0px 0px 0px #fff;
+}
+
+/* line 14, ../sass/common/_form-element.scss */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  cursor: inherit;
+  margin-bottom: 8px;
+  color: #91a3ad;
+  margin-top: 12px;
+}
+
+/* line 23, ../sass/common/_form-element.scss */
+.input--text::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder {
+  color: #91a3ad;
+}
+
+/* line 29, ../sass/common/_form-element.scss */
+.input--text::-moz-placeholder,
+input[type=text]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=password]::-moz-placeholder {
+  color: #91a3ad;
+}
+
+/* line 35, ../sass/common/_form-element.scss */
+.input--text:-moz-placeholder,
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=password]:-moz-placeholder {
+  color: #91a3ad;
+}
+
+/* line 41, ../sass/common/_form-element.scss */
+.input--text:-ms-input-placeholder,
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder {
+  color: #91a3ad;
+}
+
+/* line 48, ../sass/common/_form-element.scss */
+textarea {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: transparent;
+  border: 1px solid #91a3ad;
+  width: 100%;
+}
+/* line 56, ../sass/common/_form-element.scss */
+textarea.width--full {
+  width: 100%;
+}
+/* line 59, ../sass/common/_form-element.scss */
+textarea.border__radius--no {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 66, ../sass/common/_form-element.scss */
+.input--text,
+input[type=text],
+input[type=email],
+input[type=password] {
+  outline: 0;
+  font-size: 14px;
+  background-clip: padding-box;
+  position: relative;
+  padding: 9px 2%;
+  width: 96%;
+  border: 1px solid #91a3ad;
+  background-color: transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-transition-property: transition-property-names(background, border, "webkit");
+  -moz-transition-property: transition-property-names(background, border, "moz");
+  transition-property: transition-property-names(background, border, false);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 4, ../sass/vendor/bourbon/css3/_placeholder.scss */
+.input--text::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder {
+  font-size: 14px;
+}
+/* line 4, ../sass/vendor/bourbon/css3/_placeholder.scss */
+.input--text::-moz-placeholder,
+input[type=text]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=password]::-moz-placeholder {
+  font-size: 14px;
+}
+/* line 4, ../sass/vendor/bourbon/css3/_placeholder.scss */
+.input--text:-moz-placeholder,
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=password]:-moz-placeholder {
+  font-size: 14px;
+}
+/* line 4, ../sass/vendor/bourbon/css3/_placeholder.scss */
+.input--text:-ms-input-placeholder,
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder {
+  font-size: 14px;
+}
+/* line 87, ../sass/common/_form-element.scss */
+.input--text.width--small,
+input[type=text].width--small,
+input[type=email].width--small,
+input[type=password].width--small {
+  width: 92%;
+  padding: 9px 4%;
+}
+/* line 91, ../sass/common/_form-element.scss */
+.input--text.width--half,
+input[type=text].width--half,
+input[type=email].width--half,
+input[type=password].width--half {
+  width: 40%;
+  float: left;
+}
+/* line 95, ../sass/common/_form-element.scss */
+.input--text.border__radius--no,
+input[type=text].border__radius--no,
+input[type=email].border__radius--no,
+input[type=password].border__radius--no {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+/* line 4, ../sass/vendor/bourbon/css3/_placeholder.scss */
+.input--text.font__size--12px::-webkit-input-placeholder,
+input[type=text].font__size--12px::-webkit-input-placeholder,
+input[type=email].font__size--12px::-webkit-input-placeholder,
+input[type=password].font__size--12px::-webkit-input-placeholder {
+  font-size: 12px;
+}
+/* line 4, ../sass/vendor/bourbon/css3/_placeholder.scss */
+.input--text.font__size--12px::-moz-placeholder,
+input[type=text].font__size--12px::-moz-placeholder,
+input[type=email].font__size--12px::-moz-placeholder,
+input[type=password].font__size--12px::-moz-placeholder {
+  font-size: 12px;
+}
+/* line 4, ../sass/vendor/bourbon/css3/_placeholder.scss */
+.input--text.font__size--12px:-moz-placeholder,
+input[type=text].font__size--12px:-moz-placeholder,
+input[type=email].font__size--12px:-moz-placeholder,
+input[type=password].font__size--12px:-moz-placeholder {
+  font-size: 12px;
+}
+/* line 4, ../sass/vendor/bourbon/css3/_placeholder.scss */
+.input--text.font__size--12px:-ms-input-placeholder,
+input[type=text].font__size--12px:-ms-input-placeholder,
+input[type=email].font__size--12px:-ms-input-placeholder,
+input[type=password].font__size--12px:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+/* line 109, ../sass/common/_form-element.scss */
+input[type=text], textarea, input[type=password], input[type=email] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+
+/* line 1, ../sass/common/_header.scss */
+header {
+  height: 60px;
+  position: fixed;
+  width: 90%;
+  padding: 0 5%;
+  z-index: 1000;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/* line 9, ../sass/common/_header.scss */
+header .logo a {
+  float: left;
+  color: #ffffff;
+}
+/* line 12, ../sass/common/_header.scss */
+header .logo a span {
+  margin-top: 15px;
+  display: block;
+  font-size: 29px;
+  font-weight: 100;
+}
+/* line 18, ../sass/common/_header.scss */
+header .logo a i {
+  margin-right: 20px;
+  font-size: 36px;
+  margin-top: 12px;
+  display: block;
+}
+/* line 28, ../sass/common/_header.scss */
+header nav a.hamburger {
+  color: #ffffff;
+  margin-top: 18px;
+  display: block;
+  font-size: 24px;
+  float: right;
+}
+/* line 36, ../sass/common/_header.scss */
+header nav ul {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+/* line 44, ../sass/common/_header.scss */
+header nav li {
+  float: left;
+  width: 100%;
+}
+/* line 47, ../sass/common/_header.scss */
+header nav li a {
+  display: block;
+  padding: 18px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+/* line 54, ../sass/common/_header.scss */
+header nav li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 761px) {
+  /* line 61, ../sass/common/_header.scss */
+  header {
+    height: 90px;
+    position: fixed;
+    width: 95%;
+    padding: 0 2.5%;
+  }
+  /* line 67, ../sass/common/_header.scss */
+  header .logo a {
+    float: left;
+    font-size: 29px;
+    font-weight: 100;
+    color: #ffffff;
+  }
+  /* line 72, ../sass/common/_header.scss */
+  header .logo a span {
+    margin-top: 31px;
+    display: block;
+  }
+  /* line 76, ../sass/common/_header.scss */
+  header .logo a i {
+    margin-right: 20px;
+    font-size: 42px;
+    margin-top: 24px;
+    display: block;
+  }
+  /* line 85, ../sass/common/_header.scss */
+  header nav ul {
+    display: block;
+    margin-top: -27px;
+    position: relative;
+    background-color: transparent;
+  }
+  /* line 91, ../sass/common/_header.scss */
+  header nav li {
+    float: left;
+    margin-right: 30px;
+    width: auto;
+  }
+  /* line 95, ../sass/common/_header.scss */
+  header nav li a {
+    font-weight: 600;
+    padding: 0;
+    color: #34495e;
+    font-size: 14px;
+  }
+  /* line 100, ../sass/common/_header.scss */
+  header nav li a:hover {
+    border-bottom: 1px solid #34495e;
+  }
+  /* line 104, ../sass/common/_header.scss */
+  header nav li:last-child {
+    margin-right: 0;
+  }
+}
+/* line 111, ../sass/common/_header.scss */
+.selected {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 114, ../sass/common/_header.scss */
+.selected li a {
+  color: #ffffff;
+}
+/* line 116, ../sass/common/_header.scss */
+.selected li a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
 @font-face {
   font-family: 'ebangla';
   src: url("../fonts/ebangla.eot?44ypy");
@@ -1068,45 +1499,183 @@ nav {
 }
 
 /* line 38, ../sass/common/_icon.scss */
+.icon-logo:before {
+  content: "\e603";
+}
+
+/* line 41, ../sass/common/_icon.scss */
 .icon-hamburger:before {
   content: "\e604";
 }
 
-/* line 41, ../sass/common/_icon.scss */
+/* line 44, ../sass/common/_icon.scss */
 .icon-settings:before {
   content: "\e600";
 }
 
-/* line 44, ../sass/common/_icon.scss */
+/* line 47, ../sass/common/_icon.scss */
 .icon-wheel:before {
   content: "\e601";
 }
 
-/* line 47, ../sass/common/_icon.scss */
+/* line 50, ../sass/common/_icon.scss */
 .icon-hat:before {
   content: "\e602";
 }
 
-/* line 50, ../sass/common/_icon.scss */
-.icon-ebangla:before {
-  content: "\e603";
+/* line 106, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 87.5%;
+  line-height: 1.71429em;
 }
 
-/* line 1, ../sass/common/_nav.scss */
-nav {
-  left: 20px;
-  width: 40px;
-  height: 163px;
-  margin: auto 0;
-  z-index: 999;
-  position: fixed;
+/* line 5, ../sass/common/_typography.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.14286em;
 }
-/* line 9, ../sass/common/_nav.scss */
-nav li {
-  font-size: 30px;
-  margin-bottom: 10px;
+
+/* line 8, ../sass/common/_typography.scss */
+h2 {
+  font-size: 2.14286em;
+  line-height: 1.6em;
 }
-/* line 12, ../sass/common/_nav.scss */
-nav li:last-child {
-  margin-bottom: 0;
+
+/* line 11, ../sass/common/_typography.scss */
+h3 {
+  font-size: 1.71429em;
+  line-height: 2em;
+}
+
+/* line 14, ../sass/common/_typography.scss */
+h4 {
+  font-size: 1.5em;
+  line-height: 2.28571em;
+}
+
+/* line 17, ../sass/common/_typography.scss */
+h5 {
+  font-size: 1.28571em;
+  line-height: 1.33333em;
+}
+
+/* line 20, ../sass/common/_typography.scss */
+h6 {
+  font-size: 1.14286em;
+  line-height: 1.5em;
+}
+
+/* line 23, ../sass/common/_typography.scss */
+p {
+  font-size: 1em;
+  line-height: 1.71429em;
+}
+
+/* line 29, ../sass/common/_typography.scss */
+blockquote {
+  font-size: 1.85714em;
+  line-height: 1.84615em;
+}
+
+/* line 3, ../sass/page/_index.scss */
+#feature .content__info__wrapper--full--no-padding {
+  height: 50%;
+}
+/* line 6, ../sass/page/_index.scss */
+#feature .v-image {
+  position: absolute;
+  bottom: -102%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  width: 31%;
+}
+/* line 15, ../sass/page/_index.scss */
+#feature .h-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -100%;
+  top: 0;
+  margin: auto;
+  width: 31%;
+}
+
+@media screen and (min-width: 761px) {
+  /* line 28, ../sass/page/_index.scss */
+  #feature .content__info__wrapper--full--no-padding {
+    height: 100%;
+    width: 50%;
+  }
+}
+/* line 34, ../sass/page/_index.scss */
+#about_us {
+  background-image: url("../images/bg-1.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* line 40, ../sass/page/_index.scss */
+#about_us .content__info__wrapper--onethird,
+#about_us .content__info__wrapper--twothird {
+  height: 100%;
+}
+/* line 45, ../sass/page/_index.scss */
+#about_us i {
+  height: 250px;
+  left: 50%;
+}
+/* line 50, ../sass/page/_index.scss */
+#about_us .content {
+  width: 90%;
+  height: 400px;
+}
+
+/* line 58, ../sass/page/_index.scss */
+#service {
+  position: relative;
+}
+/* line 61, ../sass/page/_index.scss */
+#service .content {
+  height: 350px;
+}
+/* line 64, ../sass/page/_index.scss */
+#service .content i {
+  font-size: 50px;
+  display: inline-block;
+  line-height: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 70, ../sass/page/_index.scss */
+#service .content i.special {
+  font-size: 70px;
+}
+/* line 74, ../sass/page/_index.scss */
+#service .content p {
+  padding: 0 5%;
+}
+
+/* line 80, ../sass/page/_index.scss */
+#contact {
+  background-color: #34495e;
+  position: relative;
+}
+/* line 83, ../sass/page/_index.scss */
+#contact .content {
+  height: 350px;
+}
+/* line 86, ../sass/page/_index.scss */
+#contact .content i {
+  font-size: 50px;
+  display: inline-block;
+  line-height: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 92, ../sass/page/_index.scss */
+#contact .content i.special {
+  font-size: 70px;
 }

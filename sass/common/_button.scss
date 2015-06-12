@@ -1,0 +1,40 @@
+// Button Reset
+
+// Button Reset
+button {
+	width: auto;
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	overflow: visible;
+	vertical-align: middle;
+}
+
+button, .button {
+	font-size: 15px;
+	line-height: 24px;
+	padding: 6px 18px;
+	font-weight: 700;
+	font-style: normal;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	margin: 0;
+	@include border-top-radius(3px);
+	@include border-right-radius(3px);
+	@include border-bottom-radius(3px);
+	@include border-left-radius(3px);	
+	@include transition-property(background);
+	@include transition-duration(.3s);
+	background-color: $base_red ;
+	color: white;
+
+	// Width
+
+	&.width--full { width: 100%;}
+	&.width--full--no-padding { width: 100%; padding: 6px 0}
+	&.width--half { width: 50%;}
+
+
+}

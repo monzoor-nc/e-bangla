@@ -1,0 +1,116 @@
+form {
+  @include stack(0);
+  width: 100%;
+  margin: 0;
+  >a{
+    font-size: 14px;
+    display: inline-block;
+  }
+}
+input{
+  border: 0;
+  box-shadow: 0px 0px 0px #fff;
+}
+label{
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  cursor: inherit;
+  margin-bottom: 8px;
+  color: $secondary_text;
+  margin-top: 12px;
+}
+.input--text::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder {
+  color: $secondary_text;
+}
+.input--text::-moz-placeholder,
+input[type=text]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=password]::-moz-placeholder {
+  color: $secondary_text;
+}
+.input--text:-moz-placeholder,
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=password]:-moz-placeholder {
+  color: $secondary_text;
+}
+.input--text:-ms-input-placeholder,
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder {
+  color: $secondary_text;
+}
+
+textarea{
+  @include border-top-radius(3px);
+  @include border-right-radius(3px);
+  @include border-bottom-radius(3px);
+  @include border-left-radius(3px); 
+  background-color: transparent;
+  border: 1px solid $secondary_text;
+  width: 100%;
+  &.width--full{
+    width: 100%;
+  }
+  &.border__radius--no {
+    @include border-top-radius(0px);
+    @include border-right-radius(0px);
+    @include border-bottom-radius(0px);
+    @include border-left-radius(0px); 
+  }
+}
+.input--text, 
+input[type=text],
+input[type=email],
+input[type=password]{
+  outline: 0;
+  font-size: 14px;
+  background-clip: padding-box;
+  position: relative;
+  padding: 9px 2%;
+  width: 96%;
+  border: 1px solid $secondary_text;
+  background-color: transparent;
+  @include border-top-radius(3px);
+  @include border-right-radius(3px);
+  @include border-bottom-radius(3px);
+  @include border-left-radius(3px); 
+  @include transition-property(background,border);
+  @include transition-duration(.3s);
+  @include placeholder {
+    font-size: 14px;
+  }
+  &.width--small {
+    width: 92%;
+    padding: 9px 4%;
+  }
+  &.width--half{
+    width: 40%;
+    float: left;
+  }
+  &.border__radius--no {
+    @include border-top-radius(0px);
+    @include border-right-radius(0px);
+    @include border-bottom-radius(0px);
+    @include border-left-radius(0px); 
+  }
+  &.font__size--12px{
+    @extend .font__size--12px;
+    @include placeholder {
+      font-size: 12px;
+    }
+  }
+}
+
+input[type=text], textarea, input[type=password], input[type=email] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+ 

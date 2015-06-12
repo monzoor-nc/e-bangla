@@ -1,1 +1,98 @@
 
+#feature {
+	.content__info__wrapper--full--no-padding {
+		height: 50%;
+	}
+	.v-image {
+		position: absolute;
+		bottom: -102%;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: auto;
+		width: 31%;
+	}
+	.h-image {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: -100%;
+		top: 0;
+		margin: auto;
+		width: 31%;
+	}
+}
+
+@include responsive(desktop) {
+  #feature {
+		.content__info__wrapper--full--no-padding {
+			height: 100%;
+			width: 50%
+		}
+	}
+}
+#about_us {
+	background-image: url("../images/bg-1.jpg");
+	background-repeat: none;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	.content__info__wrapper--onethird,
+	.content__info__wrapper--twothird{
+		height: 100%;
+	}
+	
+	i{
+		@extend %center;
+		height: 250px;
+		left: 50%;
+	}
+	.content {
+		@extend %center;
+		width: 90%;
+		height: 400px;
+	}
+	
+}
+
+#service {
+	@extend .bg__color--light-blue;
+	position: relative;
+	.content {
+		@extend %center;
+		height: 350px;
+		i {
+			font-size: 50px;
+			display: inline-block;
+			line-height: 0;
+			width: 100%;
+			text-align: center;
+			&.special {
+				font-size: 70px;
+			}
+		}
+		p{
+			padding: 0 5%;
+		}
+	}
+}
+
+#contact {
+	background-color: $base_text;
+	position: relative;
+	.content {
+		@extend %center;
+		height: 350px;
+		i {
+			font-size: 50px;
+			display: inline-block;
+			line-height: 0;
+			width: 100%;
+			text-align: center;
+			&.special {
+				font-size: 70px;
+			}
+		}
+	}
+	
+}
