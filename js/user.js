@@ -13,8 +13,15 @@ $( document ).ready(function() {
     
 
     $(window).scroll(function () {
-    	console.log("test")
         stickyNav();
+    });
+
+     $(".index li a").click(function(event) {
+        event.preventDefault();
+        console.log();
+        $('html, body').animate({
+            scrollTop: $("#"+$(this).data("nav")).offset().top
+        }, 500);
     });
 })
 

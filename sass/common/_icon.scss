@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'ebangla';
-	src:url('../fonts/ebangla.eot?44ypy');
-	src:url('../fonts/ebangla.eot?#iefix44ypy') format('embedded-opentype'),
-		url('../fonts/ebangla.woff?44ypy') format('woff'),
-		url('../fonts/ebangla.ttf?44ypy') format('truetype'),
-		url('../fonts/ebangla.svg?44ypy#ebangla') format('svg');
+	font-family: 'etech';
+	src:url('../fonts/etech.eot?2yrjc8');
+	src:url('../fonts/etech.eot?#iefix2yrjc8') format('embedded-opentype'),
+		url('../fonts/etech.ttf?2yrjc8') format('truetype'),
+		url('../fonts/etech.woff?2yrjc8') format('woff'),
+		url('../fonts/etech.svg?2yrjc8#etech') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'ebangla';
+	font-family: 'etech';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -34,6 +34,9 @@
 }
 .icon-linkedin:before {
 	content: "\e062";
+}
+.icon-logo2:before {
+	content: "\e605";
 }
 .icon-logo:before {
 	content: "\e603";
